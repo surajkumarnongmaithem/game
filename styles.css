@@ -143,10 +143,6 @@ canvas {
   margin-bottom: 12px;
 }
 
-[hidden] {
-  display: none !important;
-}
-
 @media (max-width: 900px) {
   .game-panel {
     grid-template-columns: 1fr;

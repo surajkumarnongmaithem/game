@@ -159,7 +159,6 @@ function draw() {
 function startGame() {
   if (running) return;
   if (gameOver) resetGame();
-  hideOverlay();
   running = true;
   lastUpdate = 0;
   draw();
@@ -178,7 +177,6 @@ function endGame() {
 
 function hideOverlay() {
   overlay.hidden = true;
-  overlayMessage.textContent = "";
 }
 
 function getValidDirection(next) {
