@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Snake</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="layout">
+    <header class="header">
+      <h1>Snake</h1>
+      <p>Use your arrow keys or WASD to guide the snake. Eat apples to grow, avoid walls and your own tail.</p>
+    </header>
+
+    <section class="game-panel">
+      <div class="canvas-wrapper">
+        <canvas id="game-canvas" width="480" height="480" aria-label="Snake game board" role="img"></canvas>
+        <div class="overlay" id="game-overlay" hidden>
+          <div class="overlay-content" id="overlay-message"></div>
+          <button id="restart-button" class="button">Restart</button>
+        </div>
+      </div>
+      <aside class="sidebar">
+        <div class="scoreboard">
+          <div class="score">Score: <span id="score">0</span></div>
+          <div class="score">Best: <span id="best-score">0</span></div>
+        </div>
+        <div class="controls">
+          <button id="start-button" class="button">Start</button>
+          <button id="pause-button" class="button secondary">Pause</button>
+        </div>
+        <div class="instructions">
+          <h2>Controls</h2>
+          <ul>
+            <li>Arrow keys or WASD to turn</li>
+            <li>Space to pause/resume</li>
+            <li>Click Restart after a game over</li>
+          </ul>
+        </div>
+      </aside>
+    </section>
+  </main>
+
+  <script src="main.js"></script>
+</body>
+</html>
